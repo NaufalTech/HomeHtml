@@ -1,0 +1,148 @@
+* {
+    margin: 0px;
+    
+   } 
+   
+    body {
+    background-color: rgb(255, 255, 255);
+    
+    
+    }
+
+    div.logo {
+        display: flex;
+        gap : 100px;
+        align-items: center;
+        font-size: x-large;
+    }
+
+    #Judul {
+    color: rgb(39, 20, 204);
+    display: flex;
+    justify-content: center;
+    
+    }
+
+    p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    }
+    
+   
+    
+
+    p1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+   
+
+    nav.nav-header {
+        background-color: #16f002d3;
+        border-bottom-color: #16f002d3;
+        gap: 40px;
+        display: flex;
+        padding-right: 10px;
+        padding-left: 10px;
+        width: auto;
+        justify-content: space-between;
+        align-items: center;
+      
+    }
+
+    .logo img{
+        width: 70px;
+        height: 70px;
+        border-radius: 50px;
+        outline: 4px solid red;
+        justify-content: center;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        margin-top: 10px
+    }
+    .menu1 {
+        
+        font-family: 'Times New Roman', Times, serif;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 40px;
+
+    }         
+    
+    .menu3 {
+        border-right: 2px solid red hidden;
+        padding-right: 10px;
+        padding-left: 10px;
+        height : 40px;
+        display: flex;
+        align-items: center;
+    }
+
+    #visi-misi {
+        border-right: none;
+        padding-right: none;
+    }
+
+    a:link.menu3{
+        color :rgb(139, 161, 248);
+        text-decoration: none;
+    }
+    
+
+    a:hover.menu3{
+        color : red;
+        background-color: white;
+        
+    }
+
+    .search-fields {
+
+        border: none;
+        padding-left: 10px;
+        padding: 7px;
+        border-radius: 90px;
+    }
+    
+    
+    .nav-bottom{
+        position: fixed ;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 150px;
+        padding-top: 5px;
+        background-image: url(https://tse4.mm.bing.net/th?id=OIP.zZrVbGMZMavCDiDTIsocYwHaEK&pid=Api&P=0&h=180);
+        height: 25px;
+    }
+
+    .p-social-media-link {
+        padding-top: 15px ;
+    }
+
+    #MediaSosialLink {
+        display: flex ;
+        justify-content: center;
+        gap: 15px;
+        padding-top: 10px;
+    }
+
+    .p-social-media-link {
+        font-size: larges;
+    }
+
+    .logo-media-sosial-bottom {
+        height: 50px;
+        border-radius: 100%;
+        margin-top: 10px;
+        background-color: red;
+    }
+
+    a:link.link-social-media-bottom {
+        color: rgb(92, 187, 148);
+        text-decoration: none;
+    }
+
+
