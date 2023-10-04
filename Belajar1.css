@@ -93,7 +93,7 @@
         margin-right: 20px;
     }
     article {
-        margin: 0 100px 0 100px;
+        margin: 0 100px 100px 100px;
         text-align: justify;
     }
 
@@ -113,7 +113,6 @@
     }
 
     .nav-bottom{
-        position: fixed ;
         bottom: 0;
         width: 100%;
         text-align: center;
