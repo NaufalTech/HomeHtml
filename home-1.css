@@ -47,7 +47,7 @@
     }
 
 
-    .menu1 {
+    .link-list-nav-header {
 
         font-family: 'Times New Roman', Times, serif;
         display: flex;
@@ -56,7 +56,7 @@
 
     }         
 
-    .menu3 {
+    .link-list-nav-header {
         color: white;
         padding-right: 30px;
         padding-left: 30px;
@@ -69,17 +69,17 @@
         padding-right: none;
     }
 
-    a:link.menu3{
+    a:link.link-list-nav-header{
         color : rgb(255, 255, 255);
         text-decoration: none;
         
     }
 
-    a:hover.menu3{
+    a:hover.link-list-nav-header{
         color: rgb(0, 0, 0);
         background-color: #9eeffa;
     }
-    .menu3 a:active {
+    a:active.link-list-nav-header {
         color : rgb(115, 0, 246);
         padding-top: 10px;
     }
