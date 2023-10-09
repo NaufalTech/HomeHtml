@@ -93,7 +93,7 @@
     }
     article {
         margin: 70px 100px 100px 100px;
-        text-align: justify;
+        /* text-align: justify; */
     }
 
     .wrapper-list-content {
@@ -102,55 +102,63 @@
     }
 
     div.list-content {
-        
+        width: 75%;
         min-height: 230px ;
         border: 4px solid rgb(196, 196, 196);
-        margin: 0 30px 30px 30px;
+        margin: 30px 30px 30px 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        
+        place-items: center;
     }
 
     .content-in-list-content {
-        margin: 10px 10px 10px 10px;
+        /* margin: 10px 10px 10px 10px; */
         font-family: sans-serif;
+        width: 380px;
+        border-radius: 40px;
+        /* outline: solid 2px red; */
+        border: solid 2px blue;
+        margin-bottom: 25px;
         
     }
 
-    table,th,td {
-        border: #9eeffa 1px solid;
-    }
-
-    td {
-        height: 292px;
-        align-items: center;
-        justify-content: center;
-    }
-
-    table {
-        border-collapse: collapse;
-        width: 100%;
+    a.link-image-little-list-content {
+        width: inherit;
     }
 
     .img-title-list-content {
-        width: 200px;
-        float: left;
-        margin-right: 20px;
+        margin: 5px;
+        width: 370px;
+        aspect-ratio: 16 / 9 ;
+        float: top;
+        border-top-left-radius: 40px ;
+        border-top-right-radius: 40px;
     }
 
-    h2.title-list-content{
+    h3.title-list-content{
         display: flex;
         justify-content: space-between;
         
     }
 
    a.link-title-list-content {
-       margin-bottom: 20px;
+       margin:0 6px 10px 6px;
+       display: -webkit-box;
+       -webkit-line-clamp: 2;
+       -webkit-box-orient: vertical;
+       overflow: hidden;
+       height: 46px;
+       text-align: center;
+       /* text-align: none; */
+       /* text-justify: inter-word; */
     }
 
     .time-ago {
         font-size: medium;
-    }
-    .description {
-
-        
+        text-align: right;
+        margin-right: 25px;
+        margin-bottom: 10px;
     }
 
 
