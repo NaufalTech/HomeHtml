@@ -61,7 +61,7 @@
         padding-right: 30px;
         padding-left: 30px;
         padding-top: 20px;
-        padding-bottom:20px;     
+        padding-bottom:20px;   
     }
 
     #far-right-tab-menu {
@@ -76,12 +76,13 @@
     }
 
     a:hover.link-list-nav-header{
-        color: rgb(0, 0, 0);
+        color:  rgb(0, 204, 255);
         background-color: #9eeffa;
+        transition: 0.4s;
     }
     a:active.link-list-nav-header {
-        color : rgb(115, 0, 246);
-        padding-top: 10px;
+        color:  rgb(0, 204, 255);
+        background-color: #9eeffa;
     }
 
     .search-fields {
@@ -98,6 +99,8 @@
 
     .wrapper-list-content {
         margin : 0 30px 0 30px;
+        display: flex;
+        /* width: 75%; */
    
     }
 
@@ -111,6 +114,8 @@
         
         place-items: center;
     }
+/* !
+ */
 
     .content-in-list-content {
         /* margin: 10px 10px 10px 10px; */
@@ -150,8 +155,16 @@
        overflow: hidden;
        height: 46px;
        text-align: center;
-       /* text-align: none; */
-       /* text-justify: inter-word; */
+       text-decoration: none;
+       
+    }
+    /* a:hover {
+        tra
+    } */
+
+    .bottom-link-title-list-content {
+        display: flex;
+        justify-content: space-between;
     }
 
     .time-ago {
@@ -159,6 +172,21 @@
         text-align: right;
         margin-right: 25px;
         margin-bottom: 10px;
+        max-width: 12ch;
+    }
+
+    .tags {
+        font-size: medium;
+        text-align: left;
+        margin-left: 25px;
+        margin-bottom: 10px;
+        max-width: 12ch;
+    }
+
+    div.side-right-list-content {
+        width: 20%;
+        border: solid 2px red;
+        
     }
 
 
