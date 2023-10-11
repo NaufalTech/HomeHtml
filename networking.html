@@ -66,6 +66,20 @@
           font-size: 30px;
           align-items: center;
         }
+
+        div.test-grid{
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          outline: solid 2px red;
+          /* grid-template-rows: ; */
+
+        }
+
+        li.grid-items {
+          border: solid 2px yellow;
+          marker: none;
+        }
+
         </style>
         </head>
         <body>
@@ -80,5 +94,14 @@
           <div class="item3">Main</div>  
           <div class="item4">Right</div>
           <div class="item5">Footer</div>
+        </div>
+
+        <div class="test-grid">
+          <li class="grid-items">hehe</li>
+          <li class="grid-items">hoho</li>
+          <li class="grid-items">hihi</li>
+          <li class="grid-items">huhu</li>
+          <li class="grid-items">haha</li>
+          <li class="grid-items">kiki</li>
         </div>
 </body>
