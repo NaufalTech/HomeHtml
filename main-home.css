@@ -1,0 +1,158 @@
+.wrapper-list-content {
+    margin : 30px 30px 0 30px;
+    display: flex;
+    /* width: 75%; */
+
+}
+
+div.list-content {
+    width: 75%;
+    min-height: 230px ;
+    border: 4px solid rgb(196, 196, 196);
+    margin: 0 30px 30px 30px;
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    place-items: center;
+}
+
+.content-in-list-content {
+    /* margin: 10px 10px 10px 10px; */
+    font-family: sans-serif;
+    width: 380px;
+    border-radius: 30px;
+    /* outline: solid 2px red; */
+    border: solid 2px blue;
+    margin-bottom: 25px;
+    
+}
+
+div.image-container {
+    position: relative;
+}
+
+a.link-image-little-list-content {
+    width: inherit;
+}
+
+.img-title-list-content {
+    margin: 5px;
+    width: 370px;
+    aspect-ratio: 16 / 9 ;
+    float: top;
+    border-top-left-radius: 25px ;
+    border-top-right-radius: 25px;
+    /* position: static; */
+    /* opacity: 0.5; */
+}
+
+.sub-menu-tag {
+    position: absolute;
+    top: 15px;
+    right:15px;
+    padding: 0 5px 0 5px;
+    background-color: white;
+    border-radius:100px;
+    font-weight: bolder;
+    color: rgb(0, 183, 255)
+}
+
+h3.title-list-content{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+a.link-title-list-content {
+   margin:0 6px 10px 6px;
+   /* display: -webkit-box;
+   -webkit-line-clamp: 2;
+   -webkit-box-orient: vertical;
+   overflow: hidden; */
+   height: 46px;
+   text-align: initial center;
+   text-decoration: none;
+}
+
+.hiding-long-word {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* a:hover {
+    tra
+} */
+
+.bottom-link-title-list-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.tags-list-content-wrapper {
+    margin-inline-start: 15px;
+    margin-bottom: 10px;
+}
+
+.tags {
+    display: unset  ;
+    font-size: medium;
+    text-align: left;
+    max-width: 12ch;
+    background-color: orange;
+    background-size: contain;
+    padding: 3px 5px 3px 5px;
+    border-radius: 20px;
+}
+
+/* TODO buat sebuah program JS "TIME AGO" pada class="time-ago" di bawah */
+
+.time-ago {
+    font-size: medium;
+    text-align: right;
+    margin-right: 25px;
+    margin-bottom: 10px;
+    max-width: 12ch;
+}
+
+/* Side Articles */
+
+div.side-right-list-content {
+    width: 20%;
+    border: solid 3px rgb(204, 204, 204);
+    background-color: antiquewhite;
+    
+}
+
+div.list-side-article-wrapper {
+    margin: 10px;
+    
+}
+
+div.side-articles {
+    background-color: lightcyan;
+    margin : 0 0 30px 0;
+    padding: 10px;
+}
+
+.link-side-articles {
+    text-align: left;
+    margin : 0;
+    height: 1;
+    margin-bottom: 10px;
+}
+
+div.tags-side-articles {
+    margin :0px;
+    margin-inline-start: 25px;
+}
+
+div.bottom-side-articles {
+    display: flex;
+    justify-content: space-between;
+    
+}
