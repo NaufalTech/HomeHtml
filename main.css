@@ -101,10 +101,15 @@
         margin-right: 20px;
     }
     article {
-        margin: 148px 100px 100px 100px;
+        margin: 0 100px 100px 100px;
         /* text-align: justify; */
     }
 
+    @media screen and (max-width:1084px){
+        article{
+            margin: 0;
+        }
+    }
 
     
 
@@ -175,3 +180,4 @@
         width: clamp(100px, 50%, 200px);
     }
 
+  

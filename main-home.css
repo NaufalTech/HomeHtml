@@ -2,17 +2,22 @@
     margin : 30px 30px 0 30px;
     display: flex;
     /* width: 75%; */
+    border: solid 1px red;
 
 }
 
 div.list-content {
+
+    grid-column: 1/2;
+
     width: 75%;
     min-height: 230px ;
     border: 4px solid rgb(196, 196, 196);
-    margin: 0 30px 30px 30px;
+    /* margin: 0 30px 30px 30px; */
     padding-top: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    /* grid-auto-columns: 1fr 1fr 1fr; */
     
     place-items: center;
 }
@@ -123,6 +128,7 @@ a.link-title-list-content {
 
 div.side-right-list-content {
     width: 20%;
+    min-width: 250px;
     border: solid 3px rgb(204, 204, 204);
     background-color: antiquewhite;
     
@@ -156,3 +162,65 @@ div.bottom-side-articles {
     justify-content: space-between;
     
 }
+/* 
+@media screen and (max-width:1084px){
+    .artcile{
+        margin: 0 0 100px 0;
+    }
+} */
+
+@media screen and (max-width: 1800px) {
+    div.list-content {
+      flex: 70%;
+      /* max-width: 70%; */
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media screen and (max-width: 1500px) {
+    div.list-content {
+        /* flex: 70%; */
+      /* max-width: 70%; */
+        grid-template-columns: 1fr;
+    }
+  }
+
+  @media  screen and (max-width: 1084px){
+    div.side-right-list-content {
+        /* flex: 30%; */
+        min-width: 250px;
+    }
+
+    
+  }
+
+  @media screen and (max-width:720px) {
+    .wrapper-list-content {
+        margin: 0;
+        flex: 50%;
+        max-width: 500%;
+        display: grid;
+        justify-items: center;
+        /* row */
+    }
+    div.list-content {
+        width: unset;
+    }
+  }
+
+  @media screen and (max-width: 380px){
+    .img-title-list-content{
+        width: 330px;
+    }
+    .content-in-list-content{
+        width: 340px;
+    }
+  }
+
+
+  /* TODO buat Reponsive Web Desingn untuk bagian .nav-header dan .the-header */
+  @media screen and(max-width:180px){
+    .nav-header{
+
+    }
+  }
