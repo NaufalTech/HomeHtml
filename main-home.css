@@ -18,8 +18,8 @@ div.list-content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     /* grid-auto-columns: 1fr 1fr 1fr; */
-    
-    place-items: center;
+    /* justify- */
+    /* place-items: center ; */
 }
 
 .content-in-list-content {

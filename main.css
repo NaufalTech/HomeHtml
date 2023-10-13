@@ -20,7 +20,7 @@
         display: flex;
         gap : 100px;
         align-items: center;
-        font-size: 50px;
+        font-size: xx-large;
     }
 
     .the-header img{
@@ -28,10 +28,15 @@
         height: 70px;
         border-radius: 50px;
         outline: 4px solid red;
+        
         justify-content: center;
         margin-left: 40px;
         margin-bottom: 10px;
         margin-top: 10px
+    }
+
+    h2 {
+        padding: 0px;
     }
 
     #Judul {
@@ -47,20 +52,26 @@
         background-color: rgba(0, 204, 255, 0.808);
         gap: 40px;
         display: flex;
-        padding-left: 40px;
+        padding-left: 20px;
         width: auto;
         justify-content: space-between;
         align-items: center;
+
 
     }
 
 
     .list-nav-header {
-
+        height: 57px;
         font-family: 'Times New Roman', Times, serif;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        /* line-height: ; */
+        /* display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: scroll; */
 
     }         
 
@@ -69,7 +80,10 @@
         padding-right: 30px;
         padding-left: 30px;
         padding-top: 20px;
-        padding-bottom:20px;   
+        
+        padding-bottom:20px;  
+        
+        
     }
 
     #far-right-tab-menu {
@@ -105,11 +119,7 @@
         /* text-align: justify; */
     }
 
-    @media screen and (max-width:1084px){
-        article{
-            margin: 0;
-        }
-    }
+
 
     
 
@@ -163,7 +173,7 @@
         background-color: white;
 
     }
-
+/* 
     a:link.link-social-media-bottom {
         color: rgb(92, 187, 148);
         text-decoration: none;
@@ -174,10 +184,77 @@
     
     article {
         width: clamp (200px, 50%, 600px);
-    }
+    } */
 
     .image-con {
         width: clamp(100px, 50%, 200px);
     }
 
-  
+    @media screen and (max-width:1084px){
+        article{
+            margin: 0;
+        }
+    }
+
+    @media screen and (max-width: 980px) {
+        .link-list-nav-header{
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+        
+    }
+
+    @media screen and (max-width: 838px) {
+        .link-list-nav-header{
+            padding-right: 8px;
+            padding-left: 8px;
+        }
+        /* div.the-header {
+            justify-content: space-evenly;
+            gap: 0px;
+            font-size: x-large;
+        } */
+
+        
+    }
+
+
+
+    @media screen and (max-width:661px) {
+        .list-nav-header {
+
+        }
+
+        div.the-header {
+            
+            /* justify-content: space-evenly; */
+            
+            gap: 50px;
+            font-size: x-large;
+            margin-right: 40px;
+            /* padding: 7.5px 0 7.5px; */
+        }
+
+        h2 {
+            padding: initial 7.5px 0 7.5px;
+            /* heigt */
+        }
+
+        .the-header img {
+            position: relative;
+            right: 0;
+        } 
+    }
+
+    @media screen and (max-width: 455px) {
+        div.the-header {
+            gap: 0px;
+        }
+    }
+
+    @media screen and (max-width: 420px){
+        div.the-header {
+            display: flex;
+            justify-content: space-evenly;
+        }
+    }
