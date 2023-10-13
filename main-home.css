@@ -19,7 +19,7 @@ div.list-content {
     grid-template-columns: 1fr 1fr 1fr;
     /* grid-auto-columns: 1fr 1fr 1fr; */
     /* justify- */
-    /* place-items: center ; */
+    place-items: center ;
 }
 
 .content-in-list-content {

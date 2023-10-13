@@ -107,6 +107,28 @@
         background-color: #9eeffa;
     }
 
+    .button-list-nav-header {
+        display: none;
+        /* height: 40px; */
+        width: 12px;
+        border: 0;
+        background-color: rgb(0, 204, 255);
+        /* outline: solid rgb(138, 32, 32) 2px ; */
+        /* box-shadow: 2px red; */
+        padding: 0;
+        /* box-shadow: ; */
+    }
+
+    span {
+        display: block;
+        background: fixed;
+        background-color: white;
+        margin-bottom: 2px;
+        height: 2px;
+        width :12px;
+        text-align: center;
+    }
+
     .search-fields {
         border-radius: 20px 20px 20px 20px;
         border: none;
@@ -196,7 +218,7 @@
         }
     }
 
-    @media screen and (max-width: 980px) {
+    @media screen and (max-width: 1000px) {
         .link-list-nav-header{
             padding-right: 15px;
             padding-left: 15px;
@@ -204,26 +226,13 @@
         
     }
 
-    @media screen and (max-width: 838px) {
+    @media screen and (max-width: 850px) {
         .link-list-nav-header{
             padding-right: 8px;
             padding-left: 8px;
-        }
-        /* div.the-header {
-            justify-content: space-evenly;
-            gap: 0px;
-            font-size: x-large;
-        } */
-
-        
+        }   
     }
 
-
-
-    @media screen and (max-width:661px) {
-        .list-nav-header {
-
-        }
 
         div.the-header {
             
@@ -244,7 +253,7 @@
             position: relative;
             right: 0;
         } 
-    }
+    
 
     @media screen and (max-width: 455px) {
         div.the-header {
@@ -256,5 +265,19 @@
         div.the-header {
             display: flex;
             justify-content: space-evenly;
+        }
+    }
+
+    @media screen and (max-width: 788px){
+        nav.nav-header {
+            height: 57px;
+        }
+
+        .button-list-nav-header{
+            display: grid;
+        }
+
+        .list-nav-header {
+            display: none;
         }
     }
