@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
         <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="main-home.css">
+        <script src = forMobile.js></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 
 <body>
+
     <header>
         <div class="head">
             <div id="element1" class="the-header">
@@ -28,21 +30,41 @@
                 </div>
 
                 <!-- TODO Display list-nav-header for mobile -->
-                <div class="for-mobile">
-                    <div class="wrapper-button-list-nav-header">
-                        <button class="button-list-nav-header">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </button>
-                    </div>
+ 
+                
 
-                </div>
-
-                <div id="serch-engine" class="search-engines">
+                <div id="serch-engine" class="search-engines main-search-engine ">
                     <input type="text" id="search-field" class="search-fields" placeholder="search">
                 </div>
+
+                <!-- <div class="for-mobile"> -->
+                    <div class="wrapper-mobile-list-nav-header">
+                        <button id="theButton" class="button-list-nav-header">
+                            <!-- <span></span>
+                            <span></span>
+                            <span></span> -->
+                        </button>
+
+                        <div id="MobileThingsOrWhatever" class ="mobile-list-nav-bar-wrapper">
+                            <div  >
+                                <div id="serch-engine" class="search-engines mobile-search-engine">
+                                    <input type="text" id="search-field" class="search-fields" placeholder="search">
+                                </div>
+                            </div>
+                            <div id="hehe" class="mobile-list-nav-bar">
+                                <a href="home.html" class="link-list-nav-header">HOME</a>
+                                <a href="networking.html" class="link-list-nav-header">NETWORKING</a>
+                                <a href="Programming.html" class="link-list-nav-header">PROGRAMMING</a>
+                                <a href="#" class="link-list-nav-header" id="visi-misi">IT UPDATE</a>
+                                <a href="#" class="link-list-nav-header" id="far-right-tab-menu">ABOUT</a>
+                            </div>
+                        </div>
+                    </div>
+
+                <!-- </div> -->
+
             </nav>
+
         </div>
     </header>
     <article>

@@ -108,16 +108,24 @@
     }
 
     .button-list-nav-header {
-        display: none;
-        /* height: 40px; */
+        background-color: #4CAF50;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        /* display: none; */
+        /* height: 12px;
         width: 12px;
-        border: 0;
-        background-color: rgb(0, 204, 255);
+        border: 0; */
+        /* background-color: rgb(255, 145, 0); */
         /* outline: solid rgb(138, 32, 32) 2px ; */
         /* box-shadow: 2px red; */
-        padding: 0;
+        /* padding: 0; */
         /* box-shadow: ; */
     }
+
+
 
     span {
         display: block;
@@ -129,6 +137,20 @@
         text-align: center;
     }
 
+    .link-list-nav-header-mobile {
+        display: none;
+        /* position: ; */
+        float: left;
+        width: 300px;
+    }
+
+    
+
+    .wrapper-mobile-list-nav-header {
+        display: flex;
+        justify-items: center
+    }
+
     .search-fields {
         border-radius: 20px 20px 20px 20px;
         border: none;
@@ -136,6 +158,8 @@
         padding: 7px;
         margin-right: 20px;
     }
+
+
     article {
         margin: 0 100px 100px 100px;
         /* text-align: justify; */
@@ -273,11 +297,42 @@
             height: 57px;
         }
 
-        .button-list-nav-header{
+        /* .button-list-nav-header{
             display: grid;
-        }
+        } */
 
         .list-nav-header {
             display: none;
         }
+
+        .main-search-engine {
+            display: none;
+        }
+    }
+
+    .mobile-list-nav-bar-wrapper {
+        /* display: none; */
+    
+
+    }
+
+    .mobile-list-nav-bar {
+        display: none;
+        position: absolute;       
+         height: 100px;
+        /* margin-top: ; */
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        /* padding-top: 90px; */
+        background-color: rgb(255, 255, 255);
+        height: auto;
+        width: 300px;
     }
