@@ -147,8 +147,7 @@
     
 
     .wrapper-mobile-list-nav-header {
-        display: flex;
-        justify-items: center
+        display: none;
     }
 
     .search-fields {
@@ -308,26 +307,30 @@
         .main-search-engine {
             display: none;
         }
+
+        .wrapper-mobile-list-nav-header{
+            display: flex;
+            justify-content: space-between;
+            width : 100%;
+            align-items: center;
+        }
     }
 
-    .mobile-list-nav-bar-wrapper {
-        /* display: none; */
     
 
-    }
-
     .mobile-list-nav-bar {
-        display: none;
-        position: absolute;       
+        display: grid;
+        grid-template-columns: 1fr;
+        /* position: absolute;        */
          height: 100px;
         /* margin-top: ; */
-        display: none;
+        /* display: none; */
         position: absolute;
         background-color: #f9f9f9;
         min-width: 160px;
         overflow: auto;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        position: fixed;
+        /* position: fixed; */
         top: 0;
         left: 0;
         bottom: 0;
