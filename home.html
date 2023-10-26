@@ -9,7 +9,7 @@
 
 </head>
 
-<body>
+<body id="theBody">
 
     <header>
         <div class="head">
@@ -49,6 +49,21 @@
                             <div id="serch-engine" class="search-engines mobile-search-engine">
                                 <input type="text" id="search-field" class="search-fields" placeholder="search">
                             </div>
+
+                            
+                        </div>
+                    </div>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr;">
+                        <div id="mobile-nav-bar">
+                            <button id="theSideBarExit" class="" onclick="sideBarExit()">
+                                x
+                            </button>
+
+                            <div id="side-nav-search-field" class="search-engines mobile-search-engine" style="border: blue 2px; padding: 0px;">
+                                <input type="text" id="input-nav-side-search-field" class="search-fields " placeholder="search" style="margin-right: 0px; padding: 7px 0 7px 7px;">
+                            </div>
+
+                    
                             <div id="mobile-list" class="mobile-list-nav-bar">
                                 <a href="home.html" class="">HOME</a>
                                 <a href="networking.html" class="">NETWORKING</a>
@@ -57,9 +72,11 @@
                                 <a href="#" class="" id="far-right-tab-menu">ABOUT</a>
                             </div>
                         </div>
-                    </div>
+                        <div style="width : 30%; visibility: collapse;">
 
-                <!-- </div> -->
+                        </div>
+
+                     </div>
 
             </nav>
 
