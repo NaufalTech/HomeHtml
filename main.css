@@ -371,7 +371,7 @@
     }
 
     #theSideBarExit{
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: "Lato", sans-serif;
         width: 30px;
         height: 30px;
         border-radius: 40%;
@@ -418,11 +418,11 @@
 
     }
 
-    a:focus.link-list-mobile {
-        /* color: black; */
+    /* a:focus.link-list-mobile {
+        color: black;
         text-decoration: none;
         color: black;
         font-size: larger;
         transition: 150ms;
-    }
+    } */
     /* a:hover */
