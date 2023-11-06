@@ -1,107 +1,151 @@
 <!DOCTYPE html>
 <head>
-    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <script src = "forMobile.js"></script>
 </head>
-<style>
-    .item1 { grid-area: header; }
-    .item2 { grid-area: menu; }
-    .item3 { 
-        grid-area: main;
-        height: 100px;
-    }
-    .item4 { grid-area: right; }
-    .item5 { grid-area: footer; }
-    .wrapper {
-        display: grid;
-        grid-template-areas:
-        'header header header header header header'
-        'menu main main main right right'
-        'menu footer footer footer footer footer';
-        background-color: rgb(115, 115, 172);
-        gap: 10px;
-        padding: 10px;
-        
-    }
+<body>
+    <header>
+        <div class="head">
+            <div id="element1" class="the-header">
+                <img class="Real-Logo"
+                    src="https://www.researchgate.net/profile/F++++++++++++++++++++++++++++erda-Ernawan/publication/256097003/figure/download/fig6/AS:668761514324000@1536456578895/Sample-of-24-bit-RGB-of-graphical-image-with-512512-pixels-N-2-i-j-i1-j-1-k.jpg">
+                    
+                <h2 style="border-left: 2px solid red; padding-left: 10px; margin-left: 15px;">NaufalTech.com</h2>
+            </div>
+            <nav class="nav-header">
+                <!-- ::before -->
+                <div id="element2" class="list-nav-header">
+                    <a href="home.html" class="link-list-nav-header">HOME</a>
+                    <a href="networking.html" class="link-list-nav-header">NETWORKING</a>
+                    <a href="Programming.html" class="link-list-nav-header">PROGRAMMING</a>
+                    <a href="#" class="link-list-nav-header" id="visi-misi">IT UPDATE</a>
+                    <a href="#" class="link-list-nav-header" id="far-right-tab-menu">ABOUT</a>
+                </div>
 
-    .wrapper > div {
-        background-color: rgb(130, 211, 63) ;
-        padding : 10px 0;
-        justify-content: center;
-        text-align: center;
-        
-    }
-</style>
-<body >
-    <p>this is a Networking Menu</p>
-    <div class="wrapper">
-        <div class="item1">item1</div>
-        <div class="item2">item2</div>
-        <div class="item3">item3</div>
-        <div class="item4">item4</div>
-        <div class="item5">item5</div>
-    </div>
+                <!-- TODO Display list-nav-header for mobile -->
+ 
+                
 
-    <style>
-        .item1 { grid-area: header; }
-        .item2 { grid-area: menu; }
-        .item3 { grid-area: main; }
-        .item4 { grid-area: right; }
-        .item5 { grid-area: footer; }
-        
-        .grid-container {
-          display: grid;
-          grid-template-areas:
-            'header header header header header header'
-            'menu main main main right right'
-            'menu footer footer footer footer footer';
-          gap: 10px;
-          background-color: #2196F3;
-          padding: 10px;
-        }
-        
-        .grid-container > div {
-          background-color: rgba(255, 255, 255, 0.8);
-          text-align: center;
-          padding: 20px 0;
-          font-size: 30px;
-          align-items: center;
-        }
+                <div id="search-engine-1" class="search-engines main-search-engine ">
+                    <input type="text" id="search-field" class="search-fields" placeholder="search">
+                </div>
 
-        div.test-grid{
-          display: grid;
-          grid-template-columns: 1fr 1fr 1fr;
-          outline: solid 2px red;
-          /* grid-template-rows: ; */
+                <!-- <div class="for-mobile"> -->
+                    <div class="wrapper-mobile-list-nav-header">
+                        <button id="theListButton" class="button-list-nav-header" onclick="buttonList()">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
 
-        }
+                        <div id="demo" onclick="time()"></div>
+                        <script>  const d = new Date();
+                            document.getElementById("demo").innerHTML = d;</script>
 
-        li.grid-items {
-          border: solid 2px yellow;
-          marker: none;
-        }
+                        <div id="MobileThingsOrWhatever" class ="mobile-list-nav-bar-wrapper">
+                            <div id="search-engine-2" class="search-engines mobile-search-engine">
+                                <input type="text" id="search-field" class="search-fields" placeholder="search">
+                            </div>
 
-        </style>
-        </head>
-        <body>
-        
-        <h1>Grid Layout</h1>
-        
-        <p>The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning:</p>
-        
-        <div class="grid-container">
-          <div class="item1">Header</div>
-          <div class="item2">Menu</div>
-          <div class="item3">Main</div>  
-          <div class="item4">Right</div>
-          <div class="item5">Footer</div>
+                            
+                        </div>
+                    </div>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr;">
+                        <div id="wrapper-mobile-nav-bar">
+                            <div id="mobile-nav-bar">
+                                <div class="upper-mobile-nav-bar">
+                                    <div id="side-nav-search-field" class="search-engines mobile-search-engine" style="border: blue 2px; padding: 0px;">
+                                        <input type="text" id="input-nav-side-search-field" class="search-fields " placeholder="search" style="margin-right: 0px; padding: 7px 0 7px 7px;">
+                                    </div>
+                                    <span id="theSideBarExit" class="" onclick="sideBarExit()">
+                                        X
+                                    </span>
+                                </div>  
+                                <div id="mobile-list" class="mobile-list-nav-bar">
+                                    <a href="home.html" class="link-list-mobile">HOME</a>
+                                    <a href="networking.html" class="link-list-mobile">NETWORKING</a>
+                                    <a href="Programming.html" class="link-list-mobile">PROGRAMMING</a>
+                                    <a href="#" class="link-list-mobile" id="visi-misi">IT UPDATE</a>
+                                    <a href="www.google.com" class="link-list-mobile" id="far-right-tab-menu">ABOUT</a>
+                                </div>
+                            </div>
+                            <div style="width : 30%;  visibility: collapse; height: 200px; background-color: aliceblue;">
+
+                            </div>
+                        </div>
+
+
+                     </div>
+
+            </nav>
+
         </div>
+    </header>
 
-        <div class="test-grid">
-          <li class="grid-items">hehe</li>
-          <li class="grid-items">hoho</li>
-          <li class="grid-items">hihi</li>
-          <li class="grid-items">huhu</li>
-          <li class="grid-items">haha</li>
-          <li class="grid-items">kiki</li>
+    <article>
+        <div class="header-article">
+            <h1 class="judul">CONTOH HALAMAN CONTENT</h1>
+            <time datetime="20223-11-2 11:34">Kamis, 2 November 2023</time>
+            <div class="header-share">
+                <div class="share">Bagikan :</div>
+                <img class="logo-media-sosial-bottom logo-media-sosial-upper" src="x-logo-twitter-elon-musk.jpg" style="margin-top: unset;">
+                <img class="logo-media-sosial-bottom logo-media-sosial-upper" id="ig-logo-media-sosial-bottom" src="ig-logo.jpg" style="margin-top: unset;">
+            </div>
+            
         </div>
+        <div id="isiContent">
+            <div class="img-content">
+                <img class="mainImg" src="https://cdn.antarafoto.com/cache/1200x799/2023/10/13/kpk-tahan-mantan-menteri-pertanian-18kdc-dom.jpg" alt="ADFJASFJA">
+                <figcaption>c</figcaption>
+            </div>
+
+            <div>
+                <p>
+                    <tab></tab>ipsum dolor sit amet, consectetur adipiscing elit. Ut laoreet pellentesque erat, sit amet porttitor odio blandit a. Nulla tincidunt nunc non ligula venenatis commodo. Sed libero nulla, tincidunt quis euismod ac, semper sed ex. Cras pellentesque sollicitudin magna, nec vestibulum quam eleifend et. Cras et neque sapien. Nullam at dui lectus. Donec fringilla leo ut urna porttitor, ac ullamcorper tellus lacinia. Nunc porta ipsum sit amet sapien suscipit imperdiet. Sed vitae neque porta erat consectetur fringilla quis quis erat. Quisque gravida tempus eros in ultrices. Duis ornare dignissim est, sed pulvinar purus rutrum sit amet. Cras dictum pharetra elit a tristique. Sed eu sapien vitae tellus pellentesque maximus a id augue.
+                </p>
+
+                <p>
+                    <tab></tab>Nullam ut dictum lorem. In hac habitasse platea dictumst. Vivamus vitae semper ipsum. Etiam varius iaculis leo, id dictum lectus commodo non. Morbi lacinia quam orci, vel maximus dui tincidunt ut. Cras sed felis sapien. Donec a accumsan dui, vel laoreet orci. Vestibulum rutrum leo vel lacus vestibulum, ut consectetur nulla porttitor. Aliquam vitae purus gravida, lacinia massa et, tristique ipsum. Maecenas a finibus lacus. Ut dui lectus, porttitor quis maximus vitae, auctor ut elit. Nunc a sollicitudin mi, at placerat ante. Etiam sed tellus quis sapien facilisis faucibus. Mauris quis condimentum lectus, at sodales libero. Maecenas auctor velit sed diam accumsan tempor.
+                </p>
+                <p>
+                    <tab></tab>Praesent dolor neque, fermentum feugiat fringilla at, pulvinar pulvinar elit. Proin a imperdiet ex. Donec bibendum lectus vitae turpis porta, eu tristique lorem ullamcorper. Maecenas varius non nibh ut congue. Integer gravida interdum ligula, non sagittis nulla laoreet eu. Etiam vehicula rhoncus tellus id rutrum. Quisque lorem metus, faucibus vitae ullamcorper sed, suscipit in ante. Cras non justo gravida, congue purus et, sodales risus. Proin fringilla ex at quam gravida, ullamcorper placerat est consectetur. Donec ut lectus non quam interdum suscipit sed ut turpis. Maecenas finibus rutrum augue a facilisis. Mauris porta mollis tellus vitae sagittis. Pellentesque ac consequat est.
+
+                </p>
+                <p>
+                    <tab></tab>Ut malesuada vestibulum enim a fermentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla placerat dictum orci. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse nisl libero, dignissim vitae ipsum ac, iaculis consequat massa. Integer ullamcorper at ex ac lacinia. Donec mollis bibendum mauris sed laoreet. Donec vitae ante vel lectus pharetra suscipit. Vestibulum non urna hendrerit, congue magna at, auctor nibh. Praesent elementum, nibh ut aliquam tempor, quam est commodo urna, eget vulputate nisi velit ac justo. Aliquam metus velit, feugiat id tincidunt nec, congue in enim. Vestibulum euismod eget erat sed suscipit.
+                </p>
+                <p>
+                    <tab></tab>Mauris augue nulla, scelerisque et turpis et, fermentum condimentum est. Cras quis ante in urna dignissim efficitur eget in mauris. Cras pharetra, libero et tempus feugiat, quam erat accumsan est, a bibendum nibh metus non magna. Ut rutrum, urna interdum maximus dictum, nisi tellus elementum nibh, congue sagittis justo dui quis nulla. Fusce sit amet ipsum ac nulla dictum dapibus. Ut sagittis nec lectus ac dapibus. Aenean aliquet lacinia mi a fringilla. Vivamus massa lectus, euismod porta dolor gravida, commodo molestie sem. Etiam fermentum eros sit amet lorem porta, ac lobortis lorem porta. In malesuada purus a massa maximus vestibulum. Sed enim nulla, scelerisque quis erat id, vulputate feugiat ante. Phasellus eget nunc eget magna lobortis mollis. 
+                </p>
+          
+
+                
+
+              
+
+               
+            </div>
+        </div>
+      
+
+
+
+    </article>
+
+    <nav class="nav-bottom">
+        <div class="list-of-media-sosial-bottom">
+            <p1 class="p-social-media-link">Media Sosial</p1>
+            <div id="MediaSosialLink">
+                <a class="link-social-media-bottom" href="https://youtube.com/@moh.naufal8829?si=gTJ0uLqgiZ4ZPWzL">
+                    <img class="logo-media-sosial-bottom" src="youtube-logo-kedua.jpg">
+                </a>
+                <a class="link-social-media-bottom" href="https://twitter.com/MohNauf99098377">
+                    <img class="logo-media-sosial-bottom" src="x-logo-twitter-elon-musk.jpg">
+                </a>
+                <a class="link-social-media-bottom" href="https://www.instagram.com/moh.naufal.12139/">
+                    <img class="logo-media-sosial-bottom" id="ig-logo-media-sosial-bottom" src="ig-logo.jpg">
+            </div>
+        </div>
+        <p></p>
+    </nav>
 </body>

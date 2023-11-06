@@ -67,6 +67,11 @@ function time_ago(time) {
   }
 
   
-  var aDay = 24 * 60 * 60 * 1000;
+  var aDay = 24 * 60 * 60 * 1000;s
  document.getElementById("time-ago")(time_ago(new Date(Date.now() - aDay)));
  document.getElementById("time-ago")(time_ago(new Date(Date.now() - aDay * 2)));
+
+
+
+
+ 

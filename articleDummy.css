@@ -1,0 +1,45 @@
+
+body {
+    max-width: 2000px;
+}
+
+.img-content {
+    display: grid;
+    justify-content: center;
+}
+
+.mainImg {
+    width: 1000px;
+    text-align: center;
+    
+}
+
+figcaption#imgCaption {
+    color: gray;
+    text-align: center;
+}
+
+@media screen and (max-width : 1084px) {
+    article {
+        margin : 75px 50px 50px 50px;
+    }
+
+    .mainImg {
+        width: 500px;
+    }
+} 
+
+@media screen and (max-width : 610px) {
+    article {
+        margin : 25px 25px 50px 25px;
+    }
+
+    .judul {
+        font-size: larger;
+        margin-bottom: 10px;
+    }
+
+    .mainImg {
+        width : 300px;
+    }
+}

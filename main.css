@@ -4,6 +4,7 @@
 
     body {
     background-color: rgb(255, 255, 255);
+    
 
 
     }
@@ -28,7 +29,7 @@
         height: 70px;
         border-radius: 50px;
         outline: 4px solid red;
-        
+        -webkit-border-radius : 50px;
         justify-content: center;
         margin-left: 40px;
         margin-bottom: 10px;
@@ -153,6 +154,8 @@
     .search-fields {
         width: inherit;
         border-radius: 20px 20px 20px 20px;
+        -webkit-border-radius : 20px 20px 20px 20px;
+
         border: red;
         padding-left: 10px;
         padding: 7px;
@@ -161,18 +164,41 @@
 
 
     article {
-        margin: 0 100px 100px 100px;
+        margin: 100px 100px 100px 100px;
         /* text-align: justify; */
     }
 
+    .judul {
+        font-size: xx-large;
+        margin-bottom: 20px;
+    }
 
+    .header-share {
+        display: flex;
+        align-items: center;
+        justify-content: space-between ;
+        /* text-align: ; */
+        width: 180px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        
+    }
 
-    
+    .logo-media-sosial-upper {
+        margin-top: unset;
+    }
 
-    /* p {
+    p {
         font-family: 'Times New Roman', Times, serif;
         font-size: 20px;
+        /* white-space: pre; */
+        text-justify: distribute;
         }
+
+    tab {
+        display: inline-block;
+        margin-left: 40px;
+    }
 
     .paragraph1 {
         tab-size: 10px;
@@ -184,8 +210,8 @@
         justify-content: center;
     } */
 
-    .nav-bottom{
-        /* position: absolute; */
+    .nav-bottom {
+        position: fixed;
         bottom: 0;
         right: 0;
         left:0;
@@ -193,7 +219,6 @@
         text-align: center;
         padding-bottom: 150px;
         padding-top: 5px;
-        background-image: url(https://tse4.mm.bing.net/th?id=OIP.zZrVbGMZMavCDiDTIsocYwHaEK&pid=Api&P=0&h=180);
         height: 25px;
     }
 
@@ -413,10 +438,10 @@
         
     }
 
-    a:active.link-list-mobile {
+    /* a:active.link-list-mobile {
 
 
-    }
+    } */
 
     /* a:focus.link-list-mobile {
         color: black;
