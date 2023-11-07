@@ -208,10 +208,11 @@
         display: flex;
         align-items: center;
         justify-content: center;
-    } */
+    }
 
-    .nav-bottom {
-        position: fixed;
+    #nav-bottom {
+        background-image: url(https://tse4.mm.bing.net/th?id=OIP.zZrVbGMZMavCDiDTIsocYwHaEK&pid=Api&P=0&h=180);
+        /* position: fixed; */
         bottom: 0;
         right: 0;
         left:0;
@@ -244,7 +245,7 @@
         background-color: white;
 
     }
-/* 
+
     a:link.link-social-media-bottom {
         color: rgb(92, 187, 148);
         text-decoration: none;
@@ -255,7 +256,7 @@
     
     article {
         width: clamp (200px, 50%, 600px);
-    } */
+    }
 
     .image-con {
         width: clamp(100px, 50%, 200px);
