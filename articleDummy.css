@@ -19,6 +19,18 @@ figcaption#imgCaption {
     text-align: center;
 }
 
+table {
+    border: 1px solid red;
+}
+
+ul {
+    border: 1px solid red;
+    /* poin */
+}
+
+li {
+    border: 1px solid red;
+}
 @media screen and (max-width : 1084px) {
     article {
         margin : 75px 50px 50px 50px;

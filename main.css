@@ -168,6 +168,30 @@
         /* text-align: justify; */
     }
 
+    .path {
+        margin : 10px 10px 10px 0;
+        /* border: solid red 2px; */
+        width: 500px;
+        color: grey;
+        display: flex;
+        align-items: center;
+        /* justify-items: stretch; */
+        
+    }
+
+    .pathImg {
+        /* align-items: center; */
+        height: 22px;
+        transform: rotate(-0.25turn);
+        /* border: solid 1px red; */
+    }
+
+    .pathContent {
+        color :rgb(144 144 144 / var(--tw-text-opacity));
+        text-decoration: none;
+        padding: 0 5px 0 0;
+    }
+
     .judul {
         font-size: xx-large;
         margin-bottom: 20px;
