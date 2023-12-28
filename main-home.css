@@ -1,44 +1,235 @@
-.wrapper-list-content {
-    margin : 30px 30px 0 30px;
-    display: flex;
-    /* width: 75%; */
-    border: solid 1px red;
+a:link {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* a:visited{
+    color: inherit;
+    text-decoration: none;
+} */
+
+article {
+    /* border: 10px solid white;
+    display: grid;
+    justify-items: center;
+    align-items: center; */
+    background-color: rgb(152,255,236);
 
 }
 
-div.list-content {
+/* mulai dari sini */
+
+.wrapper-last-most-viewed-content{
+    justify-items: center;
+    width: 1000px;
+    /* height: 867px; */
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.background-1 {
+    /* background-image: url(size-CSS-background-images-correctly.webp); */
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.693)), url(size-CSS-background-images-correctly.webp);
+    background-size: cover;
+}
+
+.first-1{
+    background-color: red;
+    /* width: ; */
+    flex: 2;
+    aspect-ratio: 1/1;
+}
+
+.others {
+    border: 0;
+    display: flex;
+    flex-flow: column;
+    flex: 1;
+    gap: 10px;
+}
+
+.second-1{
+    background-color: blue;
+    flex: 1;
+    overflow: hidden;
+    width: initial;
+    text-justify: distribute;
+    /* text-align: center; */
+}
+
+.third-1{
+    background-color: yellow;
+    flex: 1;
+}
+
+.fourth-1{
+    background-color: green;
+    flex: 1;
+}
+
+.align-item {
+    display: flex;
+    /* align-items: self-end; */
+
+    flex-flow: column;
+}
+
+.flex {
+    display: flex;
+    align-items: self-end;
+}
+
+a.flex {
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+}
+
+.background-1:hover {
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.832)), url(size-CSS-background-images-correctly.webp);
+
+}
+
+hgroup {
+    margin: 0 5px 5px 5px;
+}
+
+/* hgroup:hover {} */
+
+h3.huruf-1 {
+    margin-bottom: 20px;
+}
+h1.huruf-1 {
+    margin-bottom: 40px;
+}
+
+h4.huruf-1 {
+
+}
+
+h6.huruf-1 {
+    margin-bottom: 5px;
+}
+
+h4.huruf-1{
+    height: 40px;
+    /* max-lines: 2; */
+}
+
+.hiding-long-word {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    
+}
+/* sampai sini  */
+
+
+.wrapper-list-content {
+    margin : 30px 30px 0 30px;
+    display: grid;
+    /* width: 75%; */
+    /* border: solid 1px red; */
+    justify-content: center;
+
+}
+
+.wrapper-content {
+    /* border: solid 2px red; */
+    border-radius: 30px;
+    width: inherit;
+    background-color: chartreuse;
+}
+
+.list-content {
 
     grid-column: 1/2;
 
-    width: 75%;
+    width: 100%;
     min-height: 230px ;
-    border: 4px solid rgb(196, 196, 196);
+    max-width: 1200px;
+    /* border: 4px solid rgb(196, 196, 196); */
     /* margin: 0 30px 30px 30px; */
     padding-top: 10px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    /* grid-template-columns: 1fr 1fr 1fr; */
     /* grid-auto-columns: 1fr 1fr 1fr; */
     /* justify- */
-    place-items: center ;
+    /* place-items: center ; */
+    gap: 20px;
+    margin-bottom: 50px;
+
+
+    
 }
 
 .content-in-list-content {
     /* margin: 10px 10px 10px 10px; */
     font-family: sans-serif;
     width: 380px;
-    border-radius: 30px;
+    /* background-color: rgb(0, 200, 164); */
+    background-color: rgb(29, 169, 143);
+    /* background-color: rgb(30, 41, 59); */
+    /* background-color: rgba(15, 23, 42); */
+    border-radius: 20px;
     /* outline: solid 2px red; */
-    border: solid 2px blue;
-    margin-bottom: 25px;
+    /* border: solid 2px blue; */
+    /* outline: solid 2px gray; */
+    /* margin-bottom: 25px; */
+    display: table-cell;
+    /* text-align: center;
+    vertical-align: middle; */
+    justify-self: center;
     
+}
+
+.content-in-list-content:hover {
+    outline: solid 2px gray;
+
 }
 
 div.image-container {
     /* position: relative; */
 }
 
-a.link-image-little-list-content {
-    width: inherit;
+a.link-img-title-list-content {
+    /* height:  inherit; */
+    /* display: flex; */
+    text-decoration: none;
+
+}
+
+a:link.link-img-title-list-content {
+    text-decoration: none;
+    color : blue;
+}
+
+a:active.link-img-title-list-content {
+    color: antiquewhite;
+}
+
+a:hover.link-img-title-list-content {
+    color: BLUE;
+}
+
+a:active.link-img-title-list-content {
+    color: blue;
+}
+
+a:visited.link-img-title-list-content {
+    color: rgb(255, 255, 255);
 }
 
 .img-title-list-content {
@@ -46,8 +237,10 @@ a.link-image-little-list-content {
     width: 370px;
     aspect-ratio: 16 / 9 ;
     float: top;
-    border-top-left-radius: 25px ;
-    border-top-right-radius: 25px;
+    border-top-left-radius: 15px ;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
     /* position: static; */
     /* opacity: 0.5; */
 }
@@ -64,13 +257,15 @@ a.link-image-little-list-content {
 }
 
 h3.title-list-content{
-    display: flex;
-    justify-content: space-between;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    height: 46px;
+    margin: 0 5px 0 5px;
     
 }
 
 a.link-title-list-content {
-   margin:0 6px 10px 6px;
+   /* margin:0 6px 10px 6px; */
    /* display: -webkit-box;
    -webkit-line-clamp: 2;
    -webkit-box-orient: vertical;
@@ -79,6 +274,8 @@ a.link-title-list-content {
    text-align: initial center;
    text-decoration: none;
 }
+
+
 
 .hiding-long-word {
     display: -webkit-box;
@@ -94,13 +291,18 @@ a.link-title-list-content {
 .bottom-link-title-list-content {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-inline-start: 15px;
+    margin-inline-end: 15px;
 }
 
 
 
 .tags-list-content-wrapper {
-    margin-inline-start: 15px;
+  
     margin-bottom: 10px;
+    margin-top: 10px;
+
 }
 
 .tags {
@@ -108,7 +310,8 @@ a.link-title-list-content {
     font-size: medium;
     text-align: left;
     max-width: 12ch;
-    background-color: orange;
+    color: rgb(67, 67, 67);
+    background-color: rgb(255, 255, 95);
     background-size: contain;
     padding: 3px 5px 3px 5px;
     border-radius: 20px;
@@ -116,12 +319,65 @@ a.link-title-list-content {
 
 /* TODO buat sebuah program JS "TIME AGO" pada class="time-ago" di bawah */
 
-.time-ago {
+#time-ago {
+    color: black;
     font-size: medium;
     text-align: right;
-    margin-right: 25px;
-    margin-bottom: 10px;
+    /* margin-right: 25px; */
+    /* margin-bottom: 10px; */
     max-width: 12ch;
+}
+
+.page-list-content-1 {
+    margin-bottom: 50px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+}
+
+.numbers-page-1 {
+    width: 35px;
+    aspect-ratio: 1/1;
+    /* background-color: red; */
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.link-number-page-1 {
+    background-color: rgb(69, 193, 171);
+}
+
+.link-number-page-1:hover {
+    background-color: rgb(0, 105, 84);
+}
+
+.current-number-page-1 {
+    background-color: rgba(24, 157, 130, 0.722);
+}
+
+.current-number-page-1:hover {
+    background-color: rgb(21, 138, 115);
+}
+
+.border-radius-full {
+    border-radius: 9999999px;
+}
+
+a.other-page-1 {
+    color :black;
+}
+
+a.other-page-1:hover {
+    background-color: rgb(0, 105, 84);
+    color: white;
+    
 }
 
 /* Side Articles */
@@ -154,7 +410,7 @@ div.side-articles {
 
 div.tags-side-articles {
     margin :0px;
-    margin-inline-start: 25px;
+    /* margin-inline-start: 25px; */
 }
 
 div.bottom-side-articles {
@@ -208,13 +464,18 @@ div.bottom-side-articles {
     }
   }
 
-  @media screen and (max-width: 380px){
+  @media screen and (max-width:400px){
     .img-title-list-content{
-        width: 330px;
+        width: 290px;
     }
     .content-in-list-content{
-        width: 340px;
+        width: 300px;
     }
+    
+  }
+
+  @media screen and (max-width:339px){
+    
   }
 
 
