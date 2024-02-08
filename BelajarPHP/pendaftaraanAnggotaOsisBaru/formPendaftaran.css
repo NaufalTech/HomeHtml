@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+ }
+
+body {
+    display: grid;
+    justify-content: center;
+    text-align: justify;
+    text-justify: distribute;
+    justify-items: center;
+ }
+#formPendaftaran  {
+    display: grid;
+    width: 350px;
+}
+
+input {
+    /* max-width: 300px; */
+}
+
+/* #namaDepan {
+    padding: 10px 10px;
+} */
+
+#jenisKelamin {
+    margin-left: 40px;
+}
+
+#kelas_berapa {
+    /* max-width: 300px; */
+}
+
+#jenisAgama {
+    /* margin-left: 40px; */
+    /* max-width: 300px; */
+}
+
+#wrapperRadioJenisKelamin {
+    display: grid;
+}
+
+.test {
+    position: absolute;
+    
+}
