@@ -246,7 +246,7 @@
 
 
     article {
-        margin: 100px 100px 100px 100px;
+        /* margin: 30px; */
         text-align: justify;
         background-color: rgb(152,255,236);
     }

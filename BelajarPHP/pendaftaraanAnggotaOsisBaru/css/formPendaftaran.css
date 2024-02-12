@@ -2,7 +2,7 @@
     margin: 0;
  }
 
-body {
+div.wrapperForm {
     display: grid;
     justify-content: center;
     text-align: justify;
@@ -14,26 +14,26 @@ body {
     width: 350px;
 }
 
-input {
-    /* max-width: 300px; */
-}
+/* input {
+    max-width: 300px;
+} */
 
 /* #namaDepan {
     padding: 10px 10px;
 } */
 
-#jenisKelamin {
+/* #jenisKelamin {
     margin-left: 40px;
-}
+} */
 
 #kelas_berapa {
-    /* max-width: 300px; */
+    max-width: 300px;
 }
 
-#jenisAgama {
-    /* margin-left: 40px; */
-    /* max-width: 300px; */
-}
+/* #jenisAgama {
+    margin-left: 40px;
+    max-width: 300px;
+} */
 
 #wrapperRadioJenisKelamin {
     display: grid;

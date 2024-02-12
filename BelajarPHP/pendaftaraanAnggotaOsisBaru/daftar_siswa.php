@@ -20,6 +20,7 @@
         </style>
     </head>
     <body>
+        <a href="index.html">kembali</a>
         <table>
             <thead>
                 <!-- <th>id</th> -->

@@ -23,6 +23,7 @@
         
     </head>
     <body>
+    <a href="index.html">kembali</a>
         <table>
             <thead>
                 <tr>
@@ -40,8 +41,9 @@
             </thead>
             <tbody>
                 <?php
-                $sql = "SELECT * FROM daftar_siswa";
-                $query = mysqli_query($db, $sql);
+                $sql = "SELECT * FROM daftar_siswa ORDER BY date_post DESC";
+                // $sql1 = "";
+                $query = mysqli_query($db, $sql, );
 
                 while($hasil = mysqli_fetch_array($query)){
                     echo"<tr>";
@@ -64,9 +66,9 @@
         </table>
 
         <?php 
-           
+        //    echo mys
         ?>
-        <p>Total: <?php  echo $hasil['id'] ?></p>
+        <p>Total: <?php  echo mysqli_num_rows($query) ?></p>
 
         
     </body>

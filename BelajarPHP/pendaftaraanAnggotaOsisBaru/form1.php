@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="formPendaftaran.css">
+        <link rel="stylesheet" href="css/formPendaftaran.css">
     </head>
     <body>
         <!-- <form action="formPendaftaran.php" method="post">

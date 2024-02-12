@@ -11,13 +11,14 @@ if(isset($_POST['lanjut'])){
     $kelamin = $_POST['jenisKelamin'];
     $agama = $_POST['jenisAgama'];
     $tanggal_lahir = $_POST['tanggal_lahir'];
+    $id = rand();
 
 // if($_SERVER['REQUEST METHOD'] == 'POST'){
 //      $kelas = $_POST['kelas_berapa'];
 // }
 
-    $kirim = "INSERT INTO daftar_siswa (first_name, last_name, age, class, gender, religion, date_birth)
-                VALUES ('$nama_depan', '$nama_belakang', '$usia', '$kelas','$kelamin', '$agama', '$tanggal_lahir')";
+    $kirim = "INSERT INTO daftar_siswa (id, first_name, last_name, age, class, gender, religion, date_birth)
+                VALUES ('$id','$nama_depan', '$nama_belakang', '$usia', '$kelas','$kelamin', '$agama', '$tanggal_lahir')";
     // $send ="INSERT INTO daftar_calon_osis (first_name, last_name) VALUES ('$nama_depan', '$nama_belakang')";
     $query = mysqli_query($db, $kirim);
 }

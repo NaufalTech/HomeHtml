@@ -3,8 +3,8 @@
 <?php
 
     if(isset($_POST['kirim'])){
-        $nama = $_POST['nama_pembuat'];
-        $isi_komentar = $_POST['comment'];
+        $nama = filter_input(INPUT_POST , 'nama_pembuat' , FILTER_SANITIZE_SPECIAL_CHARS);
+        $isi_komentar = filter_input(INPUT_POST , 'comment' , FILTER_SANITIZE_SPECIAL_CHARS);
 
         // buat querynya
         $kirimkan = "INSERT INTO comment_table (name, isi_comment) VALUES ('$nama', '$isi_komentar')";

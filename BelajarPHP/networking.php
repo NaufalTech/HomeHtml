@@ -146,6 +146,7 @@
                         <!-- <h6>comment_post_ID value hard-coded as 1</h6> -->
                         <!-- <input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID" /> -->
                         <input name="kirim" type="submit" value="Submit comment" />
+                        
                 
                     </form>
             
@@ -157,8 +158,37 @@
                 <diV class="daftarComment">
                     
                     <?php
-                    $pilih = "SELECT * FROM comment_table";
+                    $pilih = "SELECT * FROM comment_table ORDER BY date desc";
                     $query = mysqli_query($db, $pilih);
+
+                    function time_elapsed_string($datetime, $full = false) {
+                        $now = new DateTime;
+                        $ago = new DateTime($datetime);
+                        $diff = $now->diff($ago);
+                    
+                        $diff->w = floor($diff->d / 7);
+                        $diff->d -= $diff->w * 7;
+                    
+                        $string = array(
+                            'y' => 'year',
+                            'm' => 'month',
+                            'w' => 'week',
+                            'd' => 'day',
+                            'h' => 'hour',
+                            'i' => 'minute',
+                            's' => 'second',
+                        );
+                        foreach ($string as $k => &$v) {
+                            if ($diff->$k) {
+                                $v = $diff->$k . ' ' . $v . ($diff->$k > 1 ? 's' : '');
+                            } else {
+                                unset($string[$k]);
+                            }
+                        }
+                    
+                        if (!$full) $string = array_slice($string, 0, 1);
+                        return $string ? implode(', ', $string) . ' ago' : 'just now';
+                    }
 
                     while($daftar_comment = mysqli_fetch_array($query)){
                         echo"<br>";
@@ -168,7 +198,23 @@
                             echo"<div class ='nama'>".$daftar_comment['name']."</div>";
                             echo"<div class='lingkaran'>";
                             echo"</div>";
-                            echo"<div class='tanggal'>".$daftar_comment['date']."</div>";
+                            // $tanggalLagi = date_create($daftar_comment['date'],);
+                            // $tanggalAgo = date_format($tanggalLagi, 'Y/m/d');
+
+                                // if($tanggalAgo = date_format($tanggalLagi, 'Y') > '2023'){
+                                //     echo"<div class='tanggal'>  </div>";
+                                // }
+                            // $tanggal2 = strtotime($daftar_comment['date']);
+
+                            
+
+                            // echo 
+
+                        echo "<div class='tanggal'>".time_elapsed_string($daftar_comment['date'])."</div>";
+                            // echo "<div class='tanggal'>".strtotime('tomorrow')."</div>";
+
+
+                            // echo"<div class='tanggal'>".$tanggalAgo."</div>";
                         echo"</div>";
                         echo"<div class='isiComment'>".$daftar_comment['isi_comment']."</div>";
                         echo"</div>";
@@ -177,7 +223,9 @@
                         echo"<hr class='hr'>";
                     }
 
-                    echo mysli_num_rows($query);
+                    // echo mysli_num_rows($query);
+                    
+
                     ?>
             </div>
         </article>

@@ -16,6 +16,8 @@
             <label ><input type="radio" name="type" id="jenisKelamin" value="islam">islam</label>
             <label ><input type="radio" name="type" id="jenisKelamin" value="kristen">kristen</label>
             <label ><input type="radio" name="type" id="jenisKelamin" value="hindu">hindu</label>
+            <br>
+            
             <input type="submit" name="kirim">
         </form>
 
@@ -39,11 +41,11 @@
             echo $_GET['type'];
             echo "<br>";
             echo $_GET['select'];
-            echo $_SERVER['type']
+            echo $_SERVER['type'];
         ?>
         <br>
 
-        <!-- <?php
+        <?php
             if(isset($_POST['kirim'])){
                 $agama = $_POST['type'];
 
@@ -54,6 +56,18 @@
             if($que){
                 echo"sukses";
             }
-        ?> -->
+            // $pilih = "SELECT * FROM comment_table ORDER BY date DESC";
+            //         $query = mysqli_query($db, $pilih);
+
+                    function($tanngalBaru){
+                        
+                    };
+                    
+                    $tanggal1 = date_create($now1 = 'now');
+                   $tanggalAgo = date_format($tanggal1, 'Y');
+                   echo $tanggalAgo;
+                   
+
+        ?> 
     </body>
 </html>
