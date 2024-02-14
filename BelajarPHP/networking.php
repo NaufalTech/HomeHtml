@@ -158,38 +158,143 @@
                 <diV class="daftarComment">
                     
                     <?php
-                    $pilih = "SELECT * FROM comment_table ORDER BY date desc";
-                    $query = mysqli_query($db, $pilih);
 
-                    function time_elapsed_string($datetime, $full = false) {
-                        $now = new DateTime;
-                        $ago = new DateTime($datetime);
-                        $diff = $now->diff($ago);
-                    
-                        $diff->w = floor($diff->d / 7);
-                        $diff->d -= $diff->w * 7;
-                    
-                        $string = array(
-                            'y' => 'year',
-                            'm' => 'month',
-                            'w' => 'week',
-                            'd' => 'day',
-                            'h' => 'hour',
-                            'i' => 'minute',
-                            's' => 'second',
-                        );
-                        foreach ($string as $k => &$v) {
-                            if ($diff->$k) {
-                                $v = $diff->$k . ' ' . $v . ($diff->$k > 1 ? 's' : '');
-                            } else {
-                                unset($string[$k]);
-                            }
+
+// $time_elapsed = timeAgo($time_ago); //The argument $time_ago is in timestamp (Y-m-d H:i:s)format.
+
+//Function definition
+
+                    // function timeAgo($time_ago)
+                    // {
+                    //     $time_ago = strtotime($time_ago);
+                    //     $cur_time   = time();
+                    //     $time_elapsed   = $cur_time - $time_ago;
+                    //     $seconds    = $time_elapsed ;
+                    //     $minutes    = round($time_elapsed / 60 );
+                    //     $hours      = round($time_elapsed / 3600);
+                    //     $days       = round($time_elapsed / 86400 );
+                    //     $weeks      = round($time_elapsed / 604800);
+                    //     $months     = round($time_elapsed / 2600640 );
+                    //     $years      = round($time_elapsed / 31207680 );
+                    //     // Seconds
+                    //     if($seconds <= 60){
+                    //         return "just now";
+                    //     }
+                    //     //Minutes
+                    //     else if($minutes <=60){
+                    //         if($minutes==1){
+                    //             return "one minute ago";
+                    //         }
+                    //         else{
+                    //             return "$minutes minutes ago";
+                    //         }
+                    //     }
+                    //     //Hours
+                    //     else if($hours <=24){
+                    //         if($hours==1){
+                    //             return "an hour ago";
+                    //         }else{
+                    //             return "$hours hrs ago";
+                    //         }
+                    //     }
+                    //     //Days
+                    //     else if($days <= 7){
+                    //         if($days==1){
+                    //             return "yesterday";
+                    //         }else{
+                    //             return "$days days ago";
+                    //         }
+                    //     }
+                    //     //Weeks
+                    //     else if($weeks <= 4.3){
+                    //         if($weeks==1){
+                    //             return "a week ago";
+                    //         }else{
+                    //             return "$weeks weeks ago";
+                    //         }
+                    //     }
+                    //     //Months
+                    //     else if($months <=12){
+                    //         if($months==1){
+                    //             return "a month ago";
+                    //         }else{
+                    //             return "$months months ago";
+                    //         }
+                    //     }
+                    //     //Years
+                    //     else{
+                    //         if($years==1){
+                    //             return "one year ago";
+                    //         }else{
+                    //             return "$years years ago";
+                    //         }
+                    //     }
+                    // }
+
+                    function timeAgo($waktuLalu){
+                        $waktuSekarang = time();
+                        $waktuLalu = strtotime($waktuLalu);
+                        $operasiTanggal = $waktuSekarang - $waktuLalu;
+                        
+                        $detik = $operasiTanggal;
+                        $menit = round($operasiTanggal / 60);
+                        $jam = round($operasiTanggal / 3600);
+                        $hari = round($operasiTanggal / 86400);
+                        $minggu = round($operasiTanggal / 604800);
+                        $bulan = round($operasiTanggal / 2592000);
+                        $tahun = round($operasiTanggal / 31536000);
+
+                        if($detik == 1 | $detik == 0){
+                            return  'baru saja';
                         }
-                    
-                        if (!$full) $string = array_slice($string, 0, 1);
-                        return $string ? implode(', ', $string) . ' ago' : 'just now';
+                        elseif ($detik < 60) {
+                            return "{$operasiTanggal} detik yang lalu";
+                        }
+                        elseif ($menit < 60) {
+                            return "{$menit} menit yang lalu";
+                        }
+                        elseif ($jam < 24) {
+                            return "{$jam} jam yang lalu";
+                        }
+                        elseif ($hari < 7) {
+                            return "{$hari} hari yang lalu";
+                        }
+                        elseif($minggu < 4){
+                            return "{$minggu} minggu yang lalu";
+                        }
+                        elseif($bulan < 12){
+                            return "{$bulan} bulan yang lalu";
+                        }
+                        elseif($tahun){
+                            return "{$tahun} tahun yang lalu";
+                        }
+                           
                     }
 
+
+                    function timeAgo1($time_ago)
+                    {
+                        $time_ago = time();
+                        // $time_ago = strtotime($time_ago);
+                        
+                        // $timeAgain = date_create($time_ago);
+                        // $tanggal1 = date_format($timeAgain, "Y/M/d H:i:s"); 
+                        // $time_elapsed   = $cur_time - $time_ago;
+
+                        return $time_ago;
+                    }
+
+                    $TIME = time();
+                    function timeAgo2($time_ago2){
+                        $time_ago2 = strtotime($time_ago2);
+
+                        return $time_ago2;
+                    }
+
+                    date_default_timezone_set('Etc/GMT-8');
+
+                    $pilih = "SELECT * FROM comment_table ORDER BY date desc";
+                    $query = mysqli_query($db, $pilih);
                     while($daftar_comment = mysqli_fetch_array($query)){
                         echo"<br>";
                         echo"<div class='perComment'>";
@@ -200,18 +305,13 @@
                             echo"</div>";
                             // $tanggalLagi = date_create($daftar_comment['date'],);
                             // $tanggalAgo = date_format($tanggalLagi, 'Y/m/d');
-
-                                // if($tanggalAgo = date_format($tanggalLagi, 'Y') > '2023'){
-                                //     echo"<div class='tanggal'>  </div>";
-                                // }
-                            // $tanggal2 = strtotime($daftar_comment['date']);
-
                             
 
-                            // echo 
-
-                        echo "<div class='tanggal'>".time_elapsed_string($daftar_comment['date'])."</div>";
-                            // echo "<div class='tanggal'>".strtotime('tomorrow')."</div>";
+                            
+                            echo "<div class='tanggal'>".timeAgo($daftar_comment['date'])."</div>";
+                            // echo "<div class='tanggal'>".date('l jS \of F Y h:i:s A')."</div>";
+                            // echo "<div class='tanggal'>".timeAgo2($daftar_comment['date'])."</div>";
+                            // echo "<div class='tanggal'>".date('l jS \of F Y h:i:s A', $TIME)."</div>";
 
 
                             // echo"<div class='tanggal'>".$tanggalAgo."</div>";

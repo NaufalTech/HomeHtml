@@ -16,6 +16,6 @@
         // echo"komentar berhasil terkirim";
         header('location: networking.php?status=sukses');
     }else{
-        // echo"komentar tidak berhasil terkirim";
+        echo"komentar tidak berhasil terkirim";
     }
 ?>
